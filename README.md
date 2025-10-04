@@ -2,6 +2,12 @@
 
 A powerful Retrieval-Augmented Generation (RAG) application designed specifically for legal document analysis and question-answering. This application allows users to upload legal documents, create a searchable knowledge base, and get precise answers based on the document content.
 
+## 🚀 Live Demo
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kf9ldwzz8xgag2dbircc2b.streamlit.app/)
+
+> **Note**: To deploy your own instance, follow the [deployment guide](#deployment) below.
+
 ## 🌟 Features
 
 - **Document Upload & Processing**: Support for PDF and DOCX file formats
@@ -119,6 +125,26 @@ The application uses Sentence Transformers by default. Supported models include:
 - `all-MiniLM-L6-v2` (default) - Fast and efficient
 - `all-mpnet-base-v2` - Higher quality, slower
 - `paraphrase-MiniLM-L6-v2` - Good for paraphrase detection
+
+## 🌐 Deployment
+
+### Deploy to Streamlit Community Cloud (Recommended)
+
+1. **Fork this repository** to your GitHub account
+
+2. **Go to [share.streamlit.io](https://share.streamlit.io)**
+
+3. **Connect your GitHub account** and select this repository
+
+4. **Set the main file path** to `app.py`
+
+5. **Add secrets** in the Streamlit dashboard:
+   ```toml
+   GROQ_API_KEY = "your_groq_api_key_here"
+   ```
+
+6. **Deploy** - Your app will be available at `https://your-app-name.streamlit.app`
+
 
 ## 🔧 Technical Details
 

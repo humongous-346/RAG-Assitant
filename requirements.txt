@@ -3,7 +3,8 @@ pypdf
 python-docx
 langchain
 langchain_community
-langchain_openai
+langchain_groq
 sentence-transformers
 faiss-cpu
 torch
+python-dotenv
